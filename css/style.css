@@ -76,7 +76,6 @@
     justify-content: space-evenly !important;
 }
 
-
 .align-items-start{
     align-items: flex-start !important;
 }
@@ -90,42 +89,102 @@
     align-items: baseline !important;
 }
 
+.text-align-center{
+	text-align: center !important;
+}
+.text-align-left{
+	text-align: left !important;
+}
+.text-align-right{
+	text-align: right !important;
+}
+.text-align-justify{
+	text-align: justify !important;
+}
+
+
+/* ########## Common Style  ########### */
+
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: dodgerblue;
+    padding: 15px 20px;
+    font-size: 14px;
+}
+
 /* ######## Header Style ########## */
 
-.header-top{
+/* .header-top{
 	background-color: #1d3557;
-    /* background-color: #e63946; */
-    border-bottom: solid 1px #a8dadc;
-}
+} */
 
 .header-info{
-    background-color: #a8dadc;
-		/* background-color: #1d3557; */
-    padding: 5px 0;
+    background-color: #000;
 }
 
-.contact-info{
-    height: 50px;
-    background-color: #1d3557;
+.contact-info span{
+	color: white;
+    font-size: 14px;
+    margin-right: 10px;
+    display: inline-block;
+    padding: 15px 0;
+} 
+
+.contact-info span > a{
+    text-decoration: none;
+    color: white;
 }
+
+.contact-info span > a:hover{
+    color: dodgerblue;    
+}
+
+.contact-info span i{
+	color:dodgerblue;
+    margin-right: 5px;
+} 
 
 .info-btn{
-    background-color: #1d3557;
-    height: 100%;
+	height: 100%;
 }
 
 .nav-section{
-    padding: 5px 0;
+    background-color: white;
+    padding: 15px 0;
 }
 
-h1.logo{
-    background-color: #a8dadc;
-    height: 50px;
+h1.logo > a{
+    display: inline-block;
+    color: #000;
+    text-decoration: none;
+    font-size: 32px;
+    font-weight: 600;
+
 }
 
-.navbar{
-    background-color: #a8dadc;
-    height: 50px;
+.nav-links{
+	display: flex;
+	justify-content: flex-end;
+	gap: 0 30px;
+}
+
+.nav-item a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    padding: 8px 0px;
+
+}
+
+.nav-item a:hover{
+    color: dodgerblue;
+}
+
+.nav-item a.active{
+    color: dodgerblue;
 }
 
 /* ######   Banner Style    ########### */
