@@ -3,7 +3,11 @@
 
 /* #########   Grid Style ########  */
 
-
+:root{
+    --primary-color: #00bcd4;
+    --secondary-color: #333;
+    --white: #fff;
+}
 
 .container{
     width: 1250px;
@@ -108,8 +112,8 @@
 .btn{
     display: inline-block;
     text-decoration: none;
-    color: white;
-    background-color: dodgerblue;
+    color: var(--white);
+    background-color: var(--primary-color);
     padding: 15px 20px;
     font-size: 14px;
 }
@@ -121,11 +125,11 @@
 } */
 
 .header-info{
-    background-color: #000;
+    background-color: var(--secondary-color);
 }
 
 .contact-info span{
-	color: white;
+	color: var(--white);
     font-size: 14px;
     margin-right: 10px;
     display: inline-block;
@@ -134,16 +138,16 @@
 
 .contact-info span > a{
     text-decoration: none;
-    color: white;
+    color: var(--white);
 }
 
 .contact-info span > a:hover{
-    color: dodgerblue;    
+    color: var(--primary-color);    
 }
 
 .contact-info span i{
-	color:dodgerblue;
-    margin-right: 5px;
+	color:var(--primary-color);
+    margin-right: 6px;
 } 
 
 .info-btn{
@@ -151,13 +155,13 @@
 }
 
 .nav-section{
-    background-color: white;
+    background-color: var(--white);
     padding: 15px 0;
 }
 
 h1.logo > a{
     display: inline-block;
-    color: #000;
+    color: var(--secondary-color);
     text-decoration: none;
     font-size: 32px;
     font-weight: 600;
@@ -173,31 +177,79 @@ h1.logo > a{
 .nav-item a{
     display: block;
     text-decoration: none;
-    color: black;
+    color: var(--secondary-color);
     font-size: 14px;
     padding: 8px 0px;
 
 }
 
 .nav-item a:hover{
-    color: dodgerblue;
+    color: var(--primary-color);
 }
 
 .nav-item a.active{
-    color: dodgerblue;
+    color: var(--primary-color);
 }
 
 /* ######   Banner Style    ########### */
 
 .banner-section{
-    background-color: #1d3557;
-    padding: 140px 0;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("../img/hero-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 220px 0;
 }
 
 .banner-content{
-    background-color: #a8dadc;
-    height: 300px;
     width: 60%;
+}
+
+.banner-content h1{
+    color: white;
+    font-size: 55px;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 15px;
+}
+
+.banner-content p{
+    color: #eee;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.bnr-btn{
+    position: relative;
+    display: inline-block;
+    padding: 6px 0 6px 25px;
+}
+
+.bnr-btn a.btn{
+    /* position: relative; */
+    border-radius: 25px;
+    padding-left: 40px;
+    padding-right: 30px;
+    background-color: var(--secondary-color);
+    transition: all 0.3s ease;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.bnr-btn a.btn:hover{
+    background-color: var(--primary-color);
+}
+
+.bnr-btn i{
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    background-color: var(--primary-color);
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    color: var(--white);
+    border-radius: 50%;
+    box-shadow: 1px 0 5px -2px #000;
 }
 
 /* ########   Big Box Style   ######### */
