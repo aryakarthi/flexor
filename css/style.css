@@ -102,6 +102,9 @@
 .align-items-baseline{
     align-items: baseline !important;
 }
+.align-items-stretch{
+    align-items: stretch !important;
+}
 
 .text-align-center{
 	text-align: center !important;
@@ -173,8 +176,8 @@ h1.logo > a{
     display: inline-block;
     color: var(--secondary-color);
     text-decoration: none;
-    font-size: 32px;
-    font-weight: 600;
+    font-size: 30px;
+    font-weight: 700;
 
 }
 
@@ -252,8 +255,8 @@ h1.logo > a{
 
 .bnr-btn i{
     position: absolute;
-    top: 2px;
-    left: 6px;
+    top: 0;
+    left: 0;
     background-color: var(--primary-color);
     width: 50px;
     height: 50px;
@@ -371,7 +374,7 @@ h1.logo > a{
 .about-content{
     display: flex;
     flex-direction: column;
-    gap: 36px 0;
+    gap: 50px;
     padding: 50px 10px;
 }
 
@@ -430,7 +433,7 @@ h1.logo > a{
 }
 
 .about-list p{
-    font-size: 14px;
+    font-size: 16px;
     color: var(--secondary-color);
     line-height: 24px;
 }
@@ -451,12 +454,12 @@ h1.logo > a{
 /* ###########   Client Logo Style   ########## */
 
 .client-logo-sec{
-    padding: 80px 0;
+    padding: 60px 0;
 }
 
 .client-logo{
-    width: 120px;
     height: auto;
+	padding: 10px 30px;
     margin: 0 auto;
 }
 
@@ -487,7 +490,7 @@ h1.logo > a{
     height: 12px;
     border-radius: 50%;
     border: 1px solid var(--primary-color);
-    transition: all 0.5s ease;
+    transition: all 0.3s ease;
 }
 
 .pagination span:first-child{
@@ -525,10 +528,25 @@ h1.logo > a{
 .service-items{
     position: relative;
     margin-top: 60px;
-    padding: 50px 15px;
+    padding: 40px 20px;
     border-radius: 2px;
     background-color: var(--white);
     box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);
+}
+
+.service-items .services-icon{
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    color: var(--white);
+    font-size: 28px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    transform: translateX(-50%);
 }
 
 .service-items h4{
@@ -547,31 +565,27 @@ h1.logo > a{
     transition: all 0.3s ease;
 }
 
-.services-icon{
+
+.services-icon::after{
+    content: "";
     position: absolute;
-    left: 176px;
-    top: -30px;
-    height: 60px;
-    width: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--primary-color);
     border-radius: 50%;
-    background-color: var(--primary-color);
-    transition: all 0.3s ease;
+    background: var(--primary-color);
+    z-index: -1;
+    transition: all 0.2s ease;
 }
 
-.services-icon i{
-    font-size: 30px;
-    color: var(--white);
+.service-items:hover .services-icon::after{
+    transform: scale(1.1);
+    background-color: var(--white);
 }
 
 .service-items:hover .services-icon{
-    background-color: var(--white);
-    border: 2px solid var(--primary-color);
-}
-
-.service-items:hover .services-icon i{
     color: var(--primary-color);
 }
 
@@ -747,7 +761,8 @@ h1.logo > a{
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    border: 1px solid var(--primary-color);
+    background-color: rgba(255, 255, 255, 0.5);
+    /* border: 1px solid var(--primary-color); */
     transition: all 0.5s ease;
 }
 
@@ -1123,6 +1138,8 @@ input[type="radio"]{
 }
 
 .contact-title h2{
+    font-size: 32px;
+    font-weight: 500;
 	margin-bottom: 20px;
 }
 
@@ -1149,14 +1166,16 @@ input[type="radio"]{
 
 .contact-content h3{
 	font-size: 20px;
+    margin-bottom: 16px;
 }
 
 .contact-content p{
 	font-size: 14px;
+    line-height: 24px;
 }
 
 .form-items{
-	max-width: 100%;
+	max-width: 100%; 
 	margin-top: 60px;
 	padding: 30px;
 	box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
@@ -1184,6 +1203,15 @@ input[type="radio"]{
 	margin-top: 20px;
 	font-size: 16px;
     padding-left: 10px;
+}
+
+.message{
+    padding: 16px 0 0 8px;
+}
+
+.in-focus:focus{
+    outline: none;
+	border: 1px solid var(--primary-color);
 }
 
 .send-btn{
@@ -1263,7 +1291,7 @@ input[type="radio"]{
 }
 
 .footer-items ul li::before {
-    content: ">";
+    content: "\003E";
 	font-weight: 600;
     padding-right: 8px;
     color: var(--primary-color);
@@ -1286,12 +1314,14 @@ input[type="radio"]{
 .newsletter div{
 	width: 100%;
 	height: 40px;
+    position: relative;
 }
 
 .newsletter input{
-	width: 75%;
+	width: 70%;
 	height: 100%;
-	padding: 0 6px;
+    font-size: 16px;
+	padding: 0 20px 0 10px;
     border-radius: 20px 0 0 20px;
 	border: 1px solid lightgray;
 }
@@ -1304,12 +1334,18 @@ input[type="radio"]{
 }
 
 .newsletter button{
-	width: 25%;
+    position: absolute;
+    right: 20px;
+    top: 0;
+	width: 30%;
 	height: 100%;
-	border-radius: 0 20px 20px 0;
+	/* border-radius: 0 20px 20px 0; */
+    border-radius: 20px;
 	background-color: var(--primary-color);
 	color: white;
 	border: none;
+    font-size: 16px;
+    padding: 0 6px;
 }
 
 .newsletter button:hover{
@@ -1326,6 +1362,7 @@ input[type="radio"]{
 
 .copyright-info p{
     font-size: 14px;
+    margin-bottom: 4px;
 }
 
 .copyright-info p a{
