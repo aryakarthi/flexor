@@ -7,9 +7,9 @@
 
 :root{
     --primary-color: #00bcd4;
-    --secondary-color: #333;
+    --secondary-color: #333333;
     --white: #fff;
-    --bg-color: rgba(0, 187, 212, 0.1);
+    --bg-color: #f8feff;
 }
 
 .container{
@@ -131,11 +131,28 @@
     font-size: 14px;
 }
 
+/* .back-to-top{
+    position: absolute;
+    bottom: 50px;
+    right: 20px;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    background-color: var(--primary-color);
+    color: var(--white);
+    border-radius: 6px;
+} */
+
 /* ######## Header Style ########## */
 
-/* .header-top{
-	background-color: #1d3557;
-} */
+.header-top{
+	position: sticky;
+    left: 0;
+    right: 0;
+    top: -40px;
+    z-index: 999;
+}
 
 .header-info{
     background-color: var(--secondary-color);
@@ -203,6 +220,68 @@ h1.logo > a{
 .nav-item a.active{
     color: var(--primary-color);
 }
+
+.dd-menu{
+    position: relative;
+}
+
+.dd-menu .dd-items{
+    position: absolute;
+    display: inline-block;
+    width: 170px;
+    border-radius: 6px;
+    left: -15px;
+    top: 80px;
+    z-index: 99;
+    opacity: 0;
+    visibility: hidden;
+    background-color: var(--white);
+    box-shadow: 0 0 5px -3px #000;
+    transition: all 0.2s ease;
+}
+
+.dd-items li{
+    padding: 2px 16px;
+}
+
+.dd-menu:hover .dd-items{
+    opacity: 1;
+    visibility: visible;
+    top: 36px;
+}
+
+.ddd-menu{
+    position: relative;
+}
+
+.ddd-menu .ddd-items{
+    position: absolute;
+    display: inline-block;
+    width: 170px;
+    border-radius: 6px;
+    right: 120px;
+    top: 0;
+    z-index: 100;
+    opacity: 0;
+    visibility: hidden;
+    background-color: var(--white);
+    box-shadow: 0 0 5px -3px #000;
+    transition: all 0.2s ease;
+}
+
+.ddd-items li{
+    padding: 2px 16px;
+}
+
+.ddd-menu:hover .ddd-items{
+    opacity: 1;
+    visibility: visible;
+    right: 170px;
+}
+
+
+
+
 
 /* ######   Banner Style    ########### */
 
@@ -369,6 +448,7 @@ h1.logo > a{
     font-size: 30px;
     color: var(--white);
     background-color: var(--primary-color);
+    border: 10px var(--primary-color);
 }
 
 .about-content{
@@ -701,14 +781,18 @@ h1.logo > a{
 }
 
 .dp-ring{
-    height: 110px;
+    width: 100%;
+
+    
+    /* dp-ring */
+    /* height: 110px;
     width: 110px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.5);
-    margin: 0 auto;
+    margin: 0 auto; */
 }
 
 .client-dp{
@@ -716,6 +800,9 @@ h1.logo > a{
     width: 100px;
     border-radius: 50%;
     overflow: hidden;
+    border: 6px solid rgba(128, 128, 128, 0.5);
+    margin-bottom: 10px;
+
 }
 
 .client-dp img{
@@ -726,10 +813,12 @@ h1.logo > a{
 
 .testimonials h3{
 	font-size: 20px;
+    margin-bottom: 6px;
 }
 
 .testimonials h4{
 	font-size: 14px;
+    font-weight: 400;
 	margin: 0 0 14px;
 }
 
@@ -737,6 +826,8 @@ h1.logo > a{
 	font-size: 16px;
 	margin: 0 0 10px;
 	line-height: 2;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.8);
 }
 
 .testimonials i{
@@ -786,6 +877,7 @@ h1.logo > a{
 .portfolio-title h2{
     font-size: 32px;
     margin-bottom: 20px;
+    font-weight: 500;
 }
 
 .portfolio-title p{
@@ -821,14 +913,15 @@ h1.logo > a{
 
 .portfolio-items{
     background-color: #1d3557;
-    height: 250px;
-    margin-top: 60px;
+    height: 300px;
+    margin-top: 30px;
 	position: relative;
 }
 
 .portfolio-items img{
 	height: 100%;
 	width: 100%;
+    object-fit: cover;
 }
 
 .portfolio-filter{
@@ -870,12 +963,13 @@ h1.logo > a{
 
 .team-section{
     padding: 80px 0;
-    background-color: azure;
+    background-color: var(--bg-color);
 }
 
 .team-title h2{
     font-size: 32px;
     margin-bottom: 20px;
+    font-weight: 500;
 }
 
 .team-title p{
@@ -973,7 +1067,9 @@ h1.logo > a{
 }
 
 .pricing-title h2{
+    font-size: 32px;
 	margin-bottom: 20px;
+    font-weight: 500;
 }
 
 
@@ -1046,6 +1142,7 @@ h1.logo > a{
 .buy-now a{
 	display: inline-block;
 	font-size: 14px;
+    font-weight: 600;
 	text-decoration: none;
 	color: var(--white);
 	padding: 8px 32px;
@@ -1064,28 +1161,30 @@ h1.logo > a{
 /* ########   FAQ Style    ########## */
 
 .faq-section{
-    background-color: azure;
+    background-color: var(--bg-color);
     padding: 80px 0;
 }
 
 .faq-title{
-    background-color: azure;
+    background-color: var(--bg-color);
     text-align: center;
 	padding: 10px;
 }
 
 .faq-title h2{
 	margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 32px;
 }
 
 .faq-content{
-    background-color: azure;
+    background-color: var(--bg-color);
 	margin-top: 60px;
 }
 
 .faq-accordion{
     width: 80%;
-    background-color: azure;
+    background-color: var(--bg-color);
 }
 
 .faq-accordion li{
@@ -1115,6 +1214,12 @@ input[type="radio"]{
     display: inline-block;
 }
 
+.q-icon .fa-question-circle-o{
+    font-size: 20px;
+    color: var(--primary-color);
+    opacity: 0.5;
+}
+
 .faq-item-content{
     padding: 0 10px;
     max-height: 0;
@@ -1122,10 +1227,13 @@ input[type="radio"]{
     transition: all 0.5s ease;
 }
 
-.faq-accordion input[type="radio"]:checked + label + .faq-item-content{
-    max-height: 400px;
+.faq-accordion li:hover .q-icon, .faq-accordion li:hover .q-arrow i{
+    color: var(--primary-color);
 }
 
+.faq-accordion input[type="radio"]:checked + label + .faq-item-content{
+    max-height: 300px;
+}
 
 
 /* ########   Contact Style    ########## */
@@ -1238,11 +1346,7 @@ input[type="radio"]{
 
 .footer-section{
     padding: 40px 0;
-}
-
-.footer-items{
-    padding: 18px;
-    margin-top: 60px;
+    background-color: var(--bg-color);
 }
 
 .footer-items h3{
@@ -1305,6 +1409,14 @@ input[type="radio"]{
 
 .footer-items ul li a:hover{
 	color: var(--primary-color);
+}
+
+.address-info{
+    padding: 20px 20px 20px 0;
+}
+
+.newsletter{
+    padding: 20px 0 20px 20px;
 }
 
 .newsletter p{

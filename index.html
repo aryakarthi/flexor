@@ -12,12 +12,13 @@
 </head>
 <body>
 
+    
     <!-- Header Section Starts -->
-    <header class="header-top" id="header-id">
+    <header class="header-top">
 
         <!-- Header Info Starts -->
 
-        <div class="header-info open-sans">
+        <div class="header-info open-sans" id="header-id">
             <div class="container">
                 <div class="row justify-content-between">
                     <div class="col-lg-6">
@@ -51,14 +52,30 @@
                     <div class="col-lg-9">
                         <nav class="navbar">
                             <ul class="nav-links">
-                                <li class="nav-item"><a href="#header-id" class="active">Home</a></li>
+                                <li class="nav-item"><a href="#" class="active">Home</a></li>
                                 <li class="nav-item"><a href="#about-id">About</a></li>
                                 <li class="nav-item"><a href="#services-id">Services</a></li>
                                 <li class="nav-item"><a href="#portfolio-id">Portfolio</a></li>
                                 <li class="nav-item"><a href="#teams-id">Team</a></li>
                                 <li class="nav-item"><a href="#pricing-id">Pricing</a></li>
                                 <li class="nav-item"><a href="#">Blog</a></li>
-                                <li class="nav-item"><a href="#">Drop Down</a></li>
+                                <li class="nav-item dd-menu"><a href="#">Drop Down <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+                                    <ul class="dd-items">
+                                        <li><a href="#">Drop Down 1</a></li>
+                                        <li class="ddd-menu"><a href="#">Deep Drop Down <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+                                            <ul class="ddd-items">
+                                                <li><a href="#">Deep Drop Down 1</a></li>
+                                                <li><a href="#">Deep Drop Down 2</a></li>
+                                                <li><a href="#">Deep Drop Down 3</a></li>
+                                                <li><a href="#">Deep Drop Down 4</a></li>
+                                                <li><a href="#">Deep Drop Down 5</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Drop Down 3</a></li>
+                                        <li><a href="#">Drop Down 4</a></li>
+                                        <li><a href="#">Drop Down 5</a></li>
+                                    </ul>
+                                </li>
                                 <li class="nav-item"><a href="#contact-id">Contact</a></li>
                             </ul>
                         </nav>
@@ -312,9 +329,9 @@
                 <div class="col-lg-6">
                     <div class="service-pic-items service-pic1">
                         <div class="service-card">
-                            <h5 class="text-align-center"><a href="#">Our Mission</a></h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor ut labore et dolore magna aliqua.</p>
-                            <div class="read-more">
+                            <h5 class="text-align-center raleway"><a href="#">Our Mission</a></h5>
+                            <p class="open-sans">Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor ut labore et dolore magna aliqua.</p>
+                            <div class="read-more open-sans">
                                 <a href="#"><i class="fa fa-arrow-right" aria-hidden="true"></i>Read More</a>
                             </div>
                         </div>
@@ -323,9 +340,9 @@
                 <div class="col-lg-6">
                     <div class="service-pic-items service-pic2">
                         <div class="service-card">
-                            <h5 class="text-align-center"><a href="#">Our Plan</a></h5>
-                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem doloremque laudantium, totam rem.</p>
-                            <div class="read-more">
+                            <h5 class="text-align-center raleway"><a href="#">Our Plan</a></h5>
+                            <p class="open-sans">Sed ut perspiciatis unde omnis iste natus error sit voluptatem doloremque laudantium, totam rem.</p>
+                            <div class="read-more open-sans">
                                 <a href="#"><i class="fa fa-arrow-right" aria-hidden="true"></i>Read More</a>
                             </div>
                         </div>
@@ -334,9 +351,9 @@
                 <div class="col-lg-6">
                     <div class="service-pic-items service-pic3">
                         <div class="service-card">
-                            <h5 class="text-align-center"><a href="#">Our Vision</a></h5>
-                            <p>Nemo enim ipsam voluptatem quia voluptas sit aut odit aut fugit, sed quia magni dolores.</p>
-                            <div class="read-more">
+                            <h5 class="text-align-center raleway"><a href="#">Our Vision</a></h5>
+                            <p class="open-sans">Nemo enim ipsam voluptatem quia voluptas sit aut odit aut fugit, sed quia magni dolores.</p>
+                            <div class="read-more open-sans">
                                 <a href="#"><i class="fa fa-arrow-right" aria-hidden="true"></i>Read More</a>
                             </div>
                         </div>
@@ -345,9 +362,9 @@
                 <div class="col-lg-6">
                     <div class="service-pic-items service-pic4">
                         <div class="service-card">
-                            <h5 class="text-align-center"><a href="#">Our Care</a></h5>
-                            <p>Nostrum eum sed et autem dolorum perspiciatis. Magni porro quisquam laudantium voluptatem.</p>
-                            <div class="read-more">
+                            <h5 class="text-align-center raleway"><a href="#">Our Care</a></h5>
+                            <p class="open-sans">Nostrum eum sed et autem dolorum perspiciatis. Magni porro quisquam laudantium voluptatem.</p>
+                            <div class="read-more open-sans">
                                 <a href="#"><i class="fa fa-arrow-right" aria-hidden="true"></i>Read More</a>
                             </div>
                         </div>
@@ -363,19 +380,20 @@
 
     <section class="client-section" id="testimonials-id">
         <div class="testimonials">
-            <div class="dp-ring">
+            <div class="dp-ring display-flex justify-content-center">
                 <div class="client-dp">
                     <img src="./img/testimonials-4.jpg" alt="Matt Brandon">
                 </div>
             </div>
-            <h3 class="text-align-center">Matt Brandon</h3>
-            <h4 class="text-align-center">Freelancer</h4>
-            <p class="text-align-center">
-						<sup><i class="fa fa-quote-left" aria-hidden="true"></i></sup>
-                        Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
-							<sub><i class="fa fa-quote-right" aria-hidden="true"></i></sub>
-							
-						</p>
+            <h3 class="text-align-center raleway">Matt Brandon</h3>
+            <h4 class="text-align-center raleway">Freelancer</h4>
+            <p class="text-align-center open-sans">
+                <sup><i class="fa fa-quote-left" aria-hidden="true"></i></sup>
+                <em>
+                Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+                </em>
+                <sub><i class="fa fa-quote-right" aria-hidden="true"></i></sub>			
+			</p>
             <div class="page-dot">
                 <span></span><span></span><span></span><span></span><span></span>
             </div>
@@ -393,9 +411,9 @@
 				<div class="col-lg-12">
                     <div class="portfolio-title text-align-center">
 						<h2>Portfolio</h2>
-                        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                        <p class="open-sans">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
                         <div class="portfolio-filter display-flex justify-content-center">
-                            <ul class="filter-list display-flex">
+                            <ul class="filter-list display-flex open-sans">
                                 <li>All</li>
                                 <li>App</li>
                                 <li>Card</li>
@@ -409,8 +427,8 @@
 										<img src="./img/portfolio-1.jpg" alt="Portfolio-1">
 										<div class="portfolio-desc display-flex justify-content-between align-items-center">
 										<div>
-										<h3>App 1</h3>
-										<span>App</span>
+										<h3 class="raleway">App 1</h3>
+										<span class="open-sans">App</span>
 										</div>
 										<div class="desc-icon display-flex">
 										<span><i class="fa fa-plus" aria-hidden="true"></i></span>
@@ -424,8 +442,8 @@
 										<img src="./img/portfolio-2.jpg" alt="Portfolio-2">
 										<div class="portfolio-desc display-flex justify-content-between align-items-center">
 										<div>
-										<h3>Web 3</h3>
-										<span>Web</span>
+										<h3 class="raleway">Web 3</h3>
+										<span class="open-sans">Web</span>
 										</div>
 										<div class="desc-icon display-flex">
 										<span><i class="fa fa-plus" aria-hidden="true"></i></span>
@@ -439,8 +457,8 @@
 										<img src="./img/portfolio-3.jpg" alt="Portfolio-3">
 										<div class="portfolio-desc display-flex justify-content-between align-items-center">
 										<div>
-										<h3>App 2</h3>
-										<span>App</span>
+										<h3 class="raleway">App 2</h3>
+										<span class="open-sans">App</span>
 										</div>
 										<div class="desc-icon display-flex">
 										<span><i class="fa fa-plus" aria-hidden="true"></i></span>
@@ -454,8 +472,8 @@
 										<img src="./img/portfolio-4.jpg" alt="Portfolio-4">
 										<div class="portfolio-desc display-flex justify-content-between align-items-center">
 										<div>
-										<h3>Card 2</h3>
-										<span>Card</span>
+										<h3 class="raleway">Card 2</h3>
+										<span class="open-sans">Card</span>
 										</div>
 										<div class="desc-icon display-flex">
 										<span><i class="fa fa-plus" aria-hidden="true"></i></span>
@@ -469,8 +487,8 @@
 										<img src="./img/portfolio-5.jpg" alt="Portfolio-5">
 										<div class="portfolio-desc display-flex justify-content-between align-items-center">
 										<div>
-										<h3>Web 2</h3>
-										<span>Web</span>
+										<h3 class="raleway">Web 2</h3>
+										<span class="open-sans">Web</span>
 										</div>
 										<div class="desc-icon display-flex">
 										<span><i class="fa fa-plus" aria-hidden="true"></i></span>
@@ -484,8 +502,8 @@
 										<img src="./img/portfolio-6.jpg" alt="Portfolio-6">
 										<div class="portfolio-desc display-flex justify-content-between align-items-center">
 										<div>
-										<h3>App 3</h3>
-										<span>App</span>
+										<h3  class="raleway">App 3</h3>
+										<span class="open-sans">App</span>
 										</div>
 										<div class="desc-icon display-flex">
 										<span><i class="fa fa-plus" aria-hidden="true"></i></span>
@@ -499,8 +517,8 @@
 										<img src="./img/portfolio-7.jpg" alt="Portfolio-7">
 										<div class="portfolio-desc display-flex justify-content-between align-items-center">
 										<div>
-										<h3>Card 1</h3>
-										<span>Card</span>
+										<h3 class="raleway">Card 1</h3>
+										<span class="open-sans">Card</span>
 										</div>
 										<div class="desc-icon display-flex">
 										<span><i class="fa fa-plus" aria-hidden="true"></i></span>
@@ -514,8 +532,8 @@
 										<img src="./img/portfolio-8.jpg" alt="Portfolio-8">
 										<div class="portfolio-desc display-flex justify-content-between align-items-center">
 										<div>
-										<h3>Card 3</h3>
-										<span>Card</span>
+										<h3 class="raleway">Card 3</h3>
+										<span class="open-sans">Card</span>
 										</div>
 										<div class="desc-icon display-flex">
 										<span><i class="fa fa-plus" aria-hidden="true"></i></span>
@@ -529,8 +547,8 @@
 										<img src="./img/portfolio-9.jpg" alt="Portfolio-9">
 										<div class="portfolio-desc display-flex justify-content-between align-items-center">
 										<div>
-										<h3>Web 3</h3>
-										<span>Web</span>
+										<h3 class="raleway">Web 3</h3>
+										<span class="open-sans">Web</span>
 										</div>
 										<div class="desc-icon display-flex">
 										<span><i class="fa fa-plus" aria-hidden="true"></i></span>
@@ -551,7 +569,7 @@
         <div class="container">
             <div class="team-title text-align-center">
                 <h2>Team</h2>
-                <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                <p class="open-sans">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
             </div>
             <div class="row">
                 <div class="col-lg-3">
@@ -566,8 +584,8 @@
                             </div>
                         </div>
                         <div class="person-info">
-                            <h4>Walter White</h4>
-                            <p>Chief Executive Officer</p>
+                            <h4 class="raleway">Walter White</h4>
+                            <p class="open-sans">Chief Executive Officer</p>
                         </div>
                     </div>
                 </div>
@@ -583,8 +601,8 @@
                             </div>
                         </div>
                         <div class="person-info">
-                            <h4>Sarah Jhonson</h4>
-                            <p>Product Manager</p>
+                            <h4 class="raleway">Sarah Jhonson</h4>
+                            <p class="open-sans">Product Manager</p>
                         </div>
                     </div>
                 </div>
@@ -600,8 +618,8 @@
                             </div>
                         </div>
                         <div class="person-info">
-                            <h4>William Anderson</h4>
-                            <p>CTO</p>
+                            <h4 class="raleway">William Anderson</h4>
+                            <p class="open-sans">CTO</p>
                         </div>
                     </div>
                 </div>
@@ -617,8 +635,8 @@
                             </div>
                         </div>
                         <div class="person-info">
-                            <h4>Amanda Jepson</h4>
-                            <p>Accountant</p>
+                            <h4 class="raleway">Amanda Jepson</h4>
+                            <p class="open-sans">Accountant</p>
                         </div>
                     </div>
                 </div>
@@ -637,64 +655,64 @@
 				<div class="col-lg-12">
                     <div class="pricing-title">
 										<h2>Pricing</h2>
-										<p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+										<p class="open-sans">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
 										</div>
                 </div>
                 <div class="col-lg-3">
                     <div class="pricing-items">
 										
-										<h4 class="plan-name">Free</h4>
+										<h4 class="plan-name raleway">Free</h4>
 										<h4 class="plan-price"> <sup>$</sup> 0 <span class="per-month"> / month</span> </h4>
-										<p>Aida dere</p>
-										<p>Nec feugiat nisl</p>
-										<p>Nulla at volutpat dola</p>
-										<p><del class="delete">Pharetra massa</del></p>
-										<p><del class="delete">Massa ultricies mi</del></p>
+										<p class="open-sans">Aida dere</p>
+										<p class="open-sans">Nec feugiat nisl</p>
+										<p class="open-sans">Nulla at volutpat dola</p>
+										<p class="open-sans"><del class="delete">Pharetra massa</del></p>
+										<p class="open-sans"><del class="delete">Massa ultricies mi</del></p>
 										<div class="buy-now"> 
-										<a href="#">Buy Now</a> 
+										<a href="#" class="raleway">Buy Now</a> 
 										</div>
 										</div>
                 </div>
                 <div class="col-lg-3">
                     <div class="pricing-items">
-										<h4 class="plan-name active-price">Business</h4>
+										<h4 class="plan-name active-price raleway">Business</h4>
 										<h4 class="plan-price"> <sup>$</sup> 19 <span class="per-month"> / month</span> </h4>
-										<p>Aida dere</p>
-										<p>Nec feugiat nisl</p>
-										<p>Nulla at volutpat dola</p>
-										<p>Pharetra massa</p>
-										<p><del class="delete">Massa ultricies mi</del></p>
+										<p class="open-sans">Aida dere</p>
+										<p class="open-sans">Nec feugiat nisl</p>
+										<p class="open-sans">Nulla at volutpat dola</p>
+										<p class="open-sans">Pharetra massa</p>
+										<p class="open-sans"><del class="delete">Massa ultricies mi</del></p>
 										<div class="buy-now"> 
-										<a href="#">Buy Now</a> 
+										<a href="#" class="raleway">Buy Now</a> 
 										</div>
 										</div>
                 </div>
                 <div class="col-lg-3">
                     <div class="pricing-items">
-										<h4 class="plan-name">Developer</h4>
+										<h4 class="plan-name raleway">Developer</h4>
 										<h4 class="plan-price"> <sup>$</sup> 29 <span class="per-month"> / month</span> </h4>
-										<p>Aida dere</p>
-										<p>Nec feugiat nisl</p>
-										<p>Nulla at volutpat dola</p>
-										<p>Pharetra massa</p>
-										<p>Massa ultricies mi</p>
+										<p class="open-sans">Aida dere</p>
+										<p class="open-sans">Nec feugiat nisl</p>
+										<p class="open-sans">Nulla at volutpat dola</p>
+										<p class="open-sans">Pharetra massa</p>
+										<p class="open-sans">Massa ultricies mi</p>
 										<div class="buy-now"> 
-										<a href="#">Buy Now</a> 
+										<a href="#" class="raleway">Buy Now</a> 
 										</div>
 										</div>
                 </div>
                 <div class="col-lg-3">
                     <div class="pricing-items">
-                        <span class="advanced">Advanced</span>
-										<h4 class="plan-name">Ultimate</h4>
+                        <span class="advanced open-sans">Advanced</span>
+										<h4 class="plan-name raleway">Ultimate</h4>
 										<h4 class="plan-price"> <sup>$</sup> 49 <span class="per-month"> / month</span> </h4>
-										<p>Aida dere</p>
-										<p>Nec feugiat nisl</p>
-										<p>Nulla at volutpat dola</p>
-										<p>Pharetra massa</p>
-										<p>Massa ultricies mi</p>
+										<p class="open-sans">Aida dere</p>
+										<p class="open-sans">Nec feugiat nisl</p>
+										<p class="open-sans">Nulla at volutpat dola</p>
+										<p class="open-sans">Pharetra massa</p>
+										<p class="open-sans">Massa ultricies mi</p>
 										<div class="buy-now"> 
-										<a href="#">Buy Now</a> 
+										<a href="#" class="raleway">Buy Now</a> 
 										</div>
 										</div>
                 </div>
@@ -710,7 +728,7 @@
         <div class="container">
             <div class="faq-title">
                 <h2>F.A.Q</h2>
-                <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                <p class="open-sans">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
             </div>
 			<div class="faq-content display-flex justify-content-center">
                 <ul class="faq-accordion">
@@ -725,7 +743,7 @@
                                 <i class="fa fa-angle-down" aria-hidden="true"></i>
                             </span>
                         </label>
-                        <div class="faq-item-content">
+                        <div class="faq-item-content open-sans">
                             <p>Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.</p>
                         </div>
                     </li>
@@ -741,7 +759,7 @@
                             <i class="fa fa-angle-down" aria-hidden="true"></i>
                         </span>
                         </label>
-                        <div class="faq-item-content">
+                        <div class="faq-item-content open-sans">
                             <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
                         </div>
                     </li>
@@ -756,7 +774,7 @@
                             <i class="fa fa-angle-down" aria-hidden="true"></i>
                         </span>
                         </label>
-                        <div class="faq-item-content">
+                        <div class="faq-item-content open-sans">
                             <p>Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis</p>
                         </div>
                     </li>
@@ -771,7 +789,7 @@
                                 <i class="fa fa-angle-down" aria-hidden="true"></i>
                             </span>
                         </label>
-                        <div class="faq-item-content">
+                        <div class="faq-item-content open-sans">
                             <p>Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in.</p>
                         </div>
                     </li>
@@ -786,7 +804,7 @@
                                 <i class="fa fa-angle-down" aria-hidden="true"></i>
                             </span>
                         </label>
-                        <div class="faq-item-content">
+                        <div class="faq-item-content open-sans">
                             <p>Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque.</p>
                         </div>
                     </li>
@@ -850,7 +868,7 @@
 										<input type="text" class="subject in-focus open-sans"  placeholder="Subject">
 										<textarea id="msg" name="msg" class="message in-focus open-sans" placeholder="Message" cols="5" rows="2"></textarea>
 										<div class="send-btn">
-										<button>Send Message</button>
+										<button class="open-sans">Send Message</button>
 										</div>
 										
 										
@@ -875,7 +893,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-3">
-                    <div class="footer-items raleway">
+                    <div class="footer-items address-info raleway">
                         <h3>Flexor</h3>
 						<address>A108 Adam Street<br>New York, 535022, USA</address>
 						<div class="contacts">
@@ -920,6 +938,7 @@
             </div>
         </div>
     </section>
+    
 		
 		<!-- Footer Section Ends -->
 		
@@ -927,7 +946,7 @@
 
         <div class="copy-info">
             <div class="container">
-                <div class="row justify-content-between">
+                <div class="row justify-content-between align-items-center">
                     <div class="col-lg-3">
                         <div class="copyright-info open-sans">
                             <p><i class="fa fa-copyright" aria-hidden="true"></i> Copyright <strong>Flexor</strong> All Rights Reserved</p>
@@ -950,6 +969,8 @@
         <!-- Copy Info Ends -->
 
 				<script src="https://kit.fontawesome.com/1c1f91e0ce.js" crossorigin="anonymous"></script>
-
+                <!-- <div class="back-to-top">
+                    <i class="fa fa-arrow-up" aria-hidden="true"></i>
+                </div> -->
 </body>
 </html>
