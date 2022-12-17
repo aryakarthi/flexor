@@ -903,12 +903,13 @@ h1.logo > a{
 }
 
 .filter-list li:first-child{
-    border: 1px solid var(--primary-color);
+    background-color: azure;
+    color: var(--primary-color);
 }
 
 .filter-list li:hover{
     background-color: azure;
-    color: var(--primary-color)
+    color: var(--primary-color);
 }
 
 .portfolio-items{
@@ -919,9 +920,9 @@ h1.logo > a{
 }
 
 .portfolio-items img{
-	height: 100%;
 	width: 100%;
-    object-fit: cover;
+	/* height: 100%;
+    object-fit: cover; */
 }
 
 .portfolio-filter{
@@ -997,9 +998,9 @@ h1.logo > a{
 }
 
 .person-img img{
-    height: 100%;
     width: 100%;
-    object-fit: cover;
+    /* height: 100%;
+    object-fit: cover; */
 }
 
 .social-media{
@@ -1007,7 +1008,8 @@ h1.logo > a{
     left: 0;
     bottom: 0;
     right: 0;
-    height: 40px;
+    padding: 16px 0;
+    /* height: 40px; */
     opacity: 0;
     transition: ease 0.3s;
     background: rgba(255, 255, 255, 0.9);
