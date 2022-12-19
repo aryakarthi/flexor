@@ -30,6 +30,12 @@
     padding: 0 15px;
 }
 
+
+
+.col-sm-6{
+    width:50%;
+}
+
 .col-lg-1{
 	width:8.33%;
 }
@@ -131,18 +137,6 @@
     font-size: 14px;
 }
 
-/* .back-to-top{
-    position: absolute;
-    bottom: 50px;
-    right: 20px;
-    height: 40px;
-    width: 40px;
-    text-align: center;
-    line-height: 40px;
-    background-color: var(--primary-color);
-    color: var(--white);
-    border-radius: 6px;
-} */
 
 /* ######## Header Style ########## */
 
@@ -914,15 +908,16 @@ h1.logo > a{
 
 .portfolio-items{
     background-color: #1d3557;
-    height: 300px;
+    /* height: 300px; */
+    height: auto;
     margin-top: 30px;
 	position: relative;
 }
 
 .portfolio-items img{
+    display: block;
 	width: 100%;
-	/* height: 100%;
-    object-fit: cover; */
+	
 }
 
 .portfolio-filter{

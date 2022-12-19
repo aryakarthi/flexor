@@ -1,0 +1,73 @@
+@media all and (max-width:576px){
+  .container{
+    width: 100%
+  }
+  .row>*{
+    width: 100%;
+  }
+  .col-sm-4{
+    width:33.33%;
+}
+  .display-none{
+    display: none !important;
+  }
+  .sm-box-mt{
+    margin-top: 20px;
+  }
+
+  .about-img{
+    min-height: 500px;
+  }
+  .sm-img-pd{
+    padding: 0;
+  }
+  .testimonials{
+    padding: 60px 15px;
+  }
+
+  .team-items{
+    margin-top: 10px;
+  }
+
+  .pricing-items{
+    margin-top: 30px;
+  }
+
+
+  .name-email{
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .sm-in-width{
+    width: 100% !important;
+  }
+
+  .sm-in-mt{
+    margin-top: 65px;
+  }
+
+  .sm-txt-mt{
+    margin-top: 10px;
+  }
+
+  .sm-copy-center p{
+    text-align: center;
+  }
+
+  .sm-con-mt{
+    margin-top: 30px;
+  }
+
+
+}
+
+
+@media (max-width:768px) and (min-width:576px){
+  .container{
+    width: 100%
+  }
+  .row>*{
+    width: 100%;
+  }
+}
