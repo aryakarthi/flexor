@@ -214,12 +214,3 @@
     margin-top: 30px;
   }
 }
-
-@media (min-width:992px){
-  .container{
-    width: 100%;
-  }
-  .row>*{
-    width: 100%;
-  }
-}
