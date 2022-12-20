@@ -5,23 +5,32 @@
   .row>*{
     width: 100%;
   }
-  .col-sm-4{
+
+  .xs-con-info-center{
+    display: flex;
+    justify-content: center;
+  }
+
+  .col-xs-4{
     width:33.33%;
 }
-  .display-none{
+  .xs-d-none{
     display: none !important;
   }
-  .sm-box-mt{
+  .xs-small-box-mt{
     margin-top: 20px;
   }
 
-  .about-img{
+  .xs-img-ht{
     min-height: 500px;
   }
-  .sm-img-pd{
+
+  .xs-img-pd{
     padding: 0;
   }
-  .testimonials{
+  
+
+  .xs-test-pd{
     padding: 60px 15px;
   }
 
@@ -33,6 +42,69 @@
     margin-top: 30px;
   }
 
+  .name-email{
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .xs-in-width{
+    width: 100% !important;
+  }
+
+  .xs-in-mt{
+    margin-top: 65px;
+  }
+
+  .xs-txt-mt{
+    margin-top: 10px;
+  }
+
+  .xs-copy-center p{
+    text-align: center;
+  }
+
+  .xs-con-mt{
+    margin-top: 30px;
+  }
+
+
+}
+
+
+@media (max-width:768px) and (min-width:577px){
+  .container{
+    width: 80%;
+  }
+  .row>*{
+    width: 100%;
+  }
+  .sm-d-none{
+    display: none !important;
+  }
+
+  .col-sm-3{
+    width:25%;
+}
+
+.sm-logo-pd{
+  padding: 10px 20px;
+}
+
+  .sm-small-box-mt{
+    margin-top: 20px;
+  }
+
+  .sm-con-info-center{
+    display: flex;
+    justify-content: center;
+  }
+  .sm-copy-center{
+    text-align: center;
+  }
+
+  .sm-con-mt{
+    margin-top: 30px;
+  }
 
   .name-email{
     width: 100%;
@@ -51,21 +123,101 @@
     margin-top: 10px;
   }
 
-  .sm-copy-center p{
-    text-align: center;
-  }
 
-  .sm-con-mt{
+  .sm-price-mt{
     margin-top: 30px;
   }
 
+  .sm-teams-mt{
+    margin-top: 30px;
+  }
 
+  .sm-test-pd{
+    padding: 100px;
+  }
+
+  .sm-img-ht{
+    min-height: 500px;
+  }
 }
 
 
-@media (max-width:768px) and (min-width:576px){
+@media (max-width:992px) and (min-width:769px){
   .container{
-    width: 100%
+    width: 80%;
+  }
+  .row>*{
+    width: 100%;
+  }
+
+  .md-con-wd{
+    width: 70%;
+  }
+
+  .md-btn-wd{
+    width: 30%;
+  }
+
+  .md-in-block{
+    display: inline-block !important;
+  }
+
+  .md-d-flex{
+    display: flex;
+  }
+
+  .md-d-none{
+    display: none !important;
+  }
+
+  .md-small-box-mt{
+    margin-top: 20px;
+  }
+
+  .md-img-ht{
+    min-height: 500px;
+  }
+
+  .col-md-3{
+    width:25%;
+  }
+
+  .md-logo-pd{
+    padding: 10px 20px;
+  }
+
+  .col-md-6{
+    width: 50% !important;
+  }
+
+  .md-price-mt{
+    margin-top: 30px;
+  }
+
+  .md-teams-mt{
+    margin-top: 20px;
+  }
+
+  .md-test-pd{
+    padding: 100px 120px;
+  }
+
+  .md-con-mt{
+    margin-top: 30px;
+  }
+
+  .md-copy-center{
+    text-align: center;
+  }
+
+  .md-foot-mt{
+    margin-top: 30px;
+  }
+}
+
+@media (min-width:992px){
+  .container{
+    width: 100%;
   }
   .row>*{
     width: 100%;
