@@ -484,6 +484,7 @@ h1.logo > a{
     border-radius: 50%;
     border: 2px solid var(--primary-color);
     transition: all 0.5s ease;
+    background-color: var(--white);
 }
 
 .about-icon i{
@@ -945,6 +946,10 @@ h1.logo > a{
 	width: 16px;
 }
 
+.desc-icon span a{
+    color: var(--secondary-color);
+}
+
 .portfolio-items:hover .portfolio-desc{
 	bottom: 20px;
 	opacity: 1;
@@ -994,8 +999,7 @@ h1.logo > a{
 
 .person-img img{
     width: 100%;
-    /* height: 100%;
-    object-fit: cover; */
+    display: block;
 }
 
 .social-media{
