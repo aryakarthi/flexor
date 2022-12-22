@@ -1,4 +1,4 @@
-@media all and (max-width:576px){
+@media (max-width:576px){
   .container{
     width: 100%
   }
@@ -17,6 +17,19 @@
   .xs-d-none{
     display: none !important;
   }
+
+  .xs-ban-fs{
+    width: 100%;
+  }
+
+  .xs-ban-fs h1{
+    font-size: 28px;
+  }
+
+  .xs-ban-fs p{
+    font-size: 18px;
+  }
+
   .xs-small-box-mt{
     margin-top: 20px;
   }
@@ -67,13 +80,19 @@
     margin-top: 30px;
   }
 
+  .xs-nl-pd{
+    padding: 0 !important;
+  }
 
+  .xs-faq-wd{
+    width: 100%;
+  }
 }
 
 
-@media (max-width:768px) and (min-width:577px){
+@media (max-width:767px) and (min-width:576px){
   .container{
-    width: 80%;
+    width: 90%;
   }
   .row>*{
     width: 100%;
@@ -84,11 +103,23 @@
 
   .col-sm-3{
     width:25%;
-}
+  }
 
-.sm-logo-pd{
-  padding: 10px 20px;
-}
+  .sm-logo-pd{
+    padding: 10px 20px;
+  }
+
+  .sm-ban-fs{
+    width: 100%;
+  }
+
+  .sm-ban-fs h1{
+    font-size: 28px;
+  }
+
+  .sm-ban-fs p{
+    font-size: 18px;
+  }
 
   .sm-small-box-mt{
     margin-top: 20px;
@@ -133,18 +164,26 @@
   }
 
   .sm-test-pd{
-    padding: 100px;
+    padding: 100px 40px;
   }
 
   .sm-img-ht{
     min-height: 500px;
   }
+
+  .sm-faq-wd{
+    width: 100%;
+  }
+
+  .sm-nl-pd{
+    padding: 0 !important;
+  }
 }
 
 
-@media (max-width:992px) and (min-width:769px){
+@media (max-width:991px) and (min-width:768px){
   .container{
-    width: 80%;
+    width: 90%;
   }
   .row>*{
     width: 100%;
@@ -168,6 +207,18 @@
 
   .md-d-none{
     display: none !important;
+  }
+
+  .md-ban-fs{
+    width: 100%;
+  }
+
+  .md-ban-fs h1{
+    font-size: 28px;
+  }
+
+  .md-ban-fs p{
+    font-size: 18px;
   }
 
   .md-small-box-mt{
@@ -213,9 +264,13 @@
   .md-foot-mt{
     margin-top: 30px;
   }
+
+  .md-faq-wd{
+    width: 100%;
+  }
 }
 
-@media (max-width:1200px) and (min-width:993px){
+@media (max-width:1199px) and (min-width:992px){
   .container{
     width: 95%;
   }
@@ -278,9 +333,11 @@
     min-height: 240px;
   }
 
-  .lg-sp-ht-mt{
-    /* min-height: 400px; */
+  .lg-sp-ht{
     height: 100%;
+  }
+
+  .lg-sp-mt{
     margin-top: 30px;
   }
 
@@ -298,5 +355,11 @@
 
   .lg-jc-fc{
     justify-content: flex-end !important;
+  }
+}
+
+@media (max-width:1399px) and (min-width:1200px){
+  .container{
+    width: 95%;
   }
 }
