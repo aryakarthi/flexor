@@ -1,3 +1,276 @@
+@media (max-width:1399px) and (min-width:1200px){
+  .container{
+    width: 95%;
+  }
+}
+
+@media (max-width:1199px) and (min-width:992px){
+  .container{
+    width: 95%;
+  }
+  .row>*{
+    width: 100%;
+  }
+  .lg-con-wd , .lg-btn-wd{
+    width: 50%
+  }
+
+  .lg-logo-wd{
+    width: 20%;
+  }
+  .lg-nav-wd{
+    width: 80%;
+  }
+
+  .lg-ai-fs{
+    align-items: flex-start !important;
+  }
+
+  .lg-bbox-wd{
+    width: 42%;
+  }
+  .lg-sbox-wd{
+    width: 58%;
+  }
+  .lg-small-box-mt{
+    margin-top: 30px;
+  }
+
+  .lg-abt-img-wd , .lg-abt-con-wd{
+    width: 50%;
+  }
+
+  .lg-logo-flex{
+    display: flex;
+  }
+  .lg-col-2{
+    width: 16.66%;
+  }
+
+  .lg-col-3{
+    width: 25%;
+  }
+
+  .lg-col-4{
+    width: 33.33%;
+  }
+
+  .lg-col-6{
+    width: 50%;
+  }
+
+  .lg-col-12{
+    width: 100%;
+  }
+
+  .lg-si-mh{
+    min-height: 240px;
+  }
+
+  .lg-sp-ht{
+    height: 100%;
+  }
+
+  .lg-sp-mt{
+    margin-top: 30px;
+  }
+
+  .lg-sc-ht{
+    height: 100%;
+  }
+
+  .lg-faq-wd{
+    width: 100%;
+  }
+
+  .lg-sub-btn button{
+    width: 35%;
+  }
+  
+  .lg-jc-fc{
+    justify-content: flex-end !important;
+  }
+}
+
+@media (max-width:991px) and (min-width:768px){
+  .container{
+    width: 90%;
+  }
+  .row>*{
+    width: 100%;
+  }
+
+  .md-con-wd{
+    width: 70%;
+  }
+
+  .md-btn-wd{
+    width: 30%;
+  }
+
+  .md-in-block{
+    display: inline-block !important;
+  }
+
+  .md-d-flex{
+    display: flex;
+  }
+
+  .md-d-none{
+    display: none !important;
+  }
+
+  .md-ban-fs{
+    width: 100%;
+  }
+
+  .md-ban-fs h1{
+    font-size: 28px;
+  }
+
+  .md-ban-fs p{
+    font-size: 18px;
+  }
+
+  .md-small-box-mt{
+    margin-top: 20px;
+  }
+
+  .md-img-ht{
+    min-height: 500px;
+  }
+
+  .col-md-3{
+    width:25%;
+  }
+
+  .md-logo-pd{
+    padding: 10px 20px;
+  }
+
+  .col-md-6{
+    width: 50% !important;
+  }
+
+  .md-price-mt{
+    margin-top: 30px;
+  }
+
+  .md-teams-mt{
+    margin-top: 20px;
+  }
+
+  .md-test-pd{
+    padding: 100px 120px;
+  }
+
+  .md-con-mt{
+    margin-top: 30px;
+  }
+
+  .md-copy-center{
+    text-align: center;
+  }
+
+  .md-foot-mt{
+    margin-top: 30px;
+  }
+
+  .md-faq-wd{
+    width: 100%;
+  }
+}
+
+@media (max-width:767px) and (min-width:576px){
+  .container{
+    width: 90%;
+  }
+  .row>*{
+    width: 100%;
+  }
+  .sm-d-none{
+    display: none !important;
+  }
+
+  .col-sm-3{
+    width:25%;
+  }
+
+  .sm-logo-pd{
+    padding: 10px 20px;
+  }
+
+  .sm-ban-fs{
+    width: 100%;
+  }
+
+  .sm-ban-fs h1{
+    font-size: 28px;
+  }
+
+  .sm-ban-fs p{
+    font-size: 18px;
+  }
+
+  .sm-small-box-mt{
+    margin-top: 20px;
+  }
+
+  .sm-con-info-center{
+    display: flex;
+    justify-content: center;
+  }
+  .sm-copy-center{
+    text-align: center;
+  }
+
+  .sm-con-mt{
+    margin-top: 30px;
+  }
+
+  .name-email{
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .sm-in-width{
+    width: 100% !important;
+  }
+
+  .sm-in-mt{
+    margin-top: 65px;
+  }
+
+  .sm-txt-mt{
+    margin-top: 10px;
+  }
+
+
+  .sm-price-mt{
+    margin-top: 30px;
+  }
+
+  .sm-teams-mt{
+    margin-top: 30px;
+  }
+
+  .sm-test-pd{
+    padding: 100px 40px;
+  }
+
+  .sm-img-ht{
+    min-height: 500px;
+  }
+
+  .sm-faq-wd{
+    width: 100%;
+  }
+
+  .sm-nl-pd{
+    padding: 0 !important;
+  }
+}
+
 @media (max-width:576px){
   .container{
     width: 100%
@@ -90,276 +363,8 @@
 }
 
 
-@media (max-width:767px) and (min-width:576px){
-  .container{
-    width: 90%;
-  }
-  .row>*{
-    width: 100%;
-  }
-  .sm-d-none{
-    display: none !important;
-  }
-
-  .col-sm-3{
-    width:25%;
-  }
-
-  .sm-logo-pd{
-    padding: 10px 20px;
-  }
-
-  .sm-ban-fs{
-    width: 100%;
-  }
-
-  .sm-ban-fs h1{
-    font-size: 28px;
-  }
-
-  .sm-ban-fs p{
-    font-size: 18px;
-  }
-
-  .sm-small-box-mt{
-    margin-top: 20px;
-  }
-
-  .sm-con-info-center{
-    display: flex;
-    justify-content: center;
-  }
-  .sm-copy-center{
-    text-align: center;
-  }
-
-  .sm-con-mt{
-    margin-top: 30px;
-  }
-
-  .name-email{
-    width: 100%;
-    flex-wrap: wrap;
-  }
-
-  .sm-in-width{
-    width: 100% !important;
-  }
-
-  .sm-in-mt{
-    margin-top: 65px;
-  }
-
-  .sm-txt-mt{
-    margin-top: 10px;
-  }
 
 
-  .sm-price-mt{
-    margin-top: 30px;
-  }
-
-  .sm-teams-mt{
-    margin-top: 30px;
-  }
-
-  .sm-test-pd{
-    padding: 100px 40px;
-  }
-
-  .sm-img-ht{
-    min-height: 500px;
-  }
-
-  .sm-faq-wd{
-    width: 100%;
-  }
-
-  .sm-nl-pd{
-    padding: 0 !important;
-  }
-}
 
 
-@media (max-width:991px) and (min-width:768px){
-  .container{
-    width: 90%;
-  }
-  .row>*{
-    width: 100%;
-  }
 
-  .md-con-wd{
-    width: 70%;
-  }
-
-  .md-btn-wd{
-    width: 30%;
-  }
-
-  .md-in-block{
-    display: inline-block !important;
-  }
-
-  .md-d-flex{
-    display: flex;
-  }
-
-  .md-d-none{
-    display: none !important;
-  }
-
-  .md-ban-fs{
-    width: 100%;
-  }
-
-  .md-ban-fs h1{
-    font-size: 28px;
-  }
-
-  .md-ban-fs p{
-    font-size: 18px;
-  }
-
-  .md-small-box-mt{
-    margin-top: 20px;
-  }
-
-  .md-img-ht{
-    min-height: 500px;
-  }
-
-  .col-md-3{
-    width:25%;
-  }
-
-  .md-logo-pd{
-    padding: 10px 20px;
-  }
-
-  .col-md-6{
-    width: 50% !important;
-  }
-
-  .md-price-mt{
-    margin-top: 30px;
-  }
-
-  .md-teams-mt{
-    margin-top: 20px;
-  }
-
-  .md-test-pd{
-    padding: 100px 120px;
-  }
-
-  .md-con-mt{
-    margin-top: 30px;
-  }
-
-  .md-copy-center{
-    text-align: center;
-  }
-
-  .md-foot-mt{
-    margin-top: 30px;
-  }
-
-  .md-faq-wd{
-    width: 100%;
-  }
-}
-
-@media (max-width:1199px) and (min-width:992px){
-  .container{
-    width: 95%;
-  }
-  .row>*{
-    width: 100%;
-  }
-  .lg-con-wd , .lg-btn-wd{
-    width: 50%
-  }
-
-  .lg-logo-wd{
-    width: 20%;
-  }
-  .lg-nav-wd{
-    width: 80%;
-  }
-
-  .lg-ai-fs{
-    align-items: flex-start !important;
-  }
-
-  .lg-bbox-wd{
-    width: 42%;
-  }
-  .lg-sbox-wd{
-    width: 58%;
-  }
-  .lg-small-box-mt{
-    margin-top: 30px;
-  }
-
-  .lg-abt-img-wd , .lg-abt-con-wd{
-    width: 50%;
-  }
-
-  .lg-logo-flex{
-    display: flex;
-  }
-  .lg-col-2{
-    width: 16.66%;
-  }
-
-  .lg-col-3{
-    width: 25%;
-  }
-
-  .lg-col-4{
-    width: 33.33%;
-  }
-
-  .lg-col-6{
-    width: 50%;
-  }
-
-  .lg-col-12{
-    width: 100%;
-  }
-
-  .lg-si-mh{
-    min-height: 240px;
-  }
-
-  .lg-sp-ht{
-    height: 100%;
-  }
-
-  .lg-sp-mt{
-    margin-top: 30px;
-  }
-
-  .lg-sc-ht{
-    height: 100%;
-  }
-
-  .lg-faq-wd{
-    width: 100%;
-  }
-
-  .lg-sub-btn button{
-    width: 35%;
-  }
-
-  .lg-jc-fc{
-    justify-content: flex-end !important;
-  }
-}
-
-@media (max-width:1399px) and (min-width:1200px){
-  .container{
-    width: 95%;
-  }
-}
